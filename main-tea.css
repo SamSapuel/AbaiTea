@@ -1,0 +1,709 @@
+html {                              /* animation pro scroll*/
+    scroll-behavior: smooth; 
+}                            
+
+body {                              /* main styl pro body kazde stranky*/
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 1.6;
+    margin: 0;
+    width: 100%;
+}
+/* header + navigation */                  /* pouziva se struktura container(div v divu atd.)*/
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 30px;
+
+}
+.logo {
+    font-family: Orbitron;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+
+}
+.nav {                          /* Reviews Contacts Sign Up */
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.header_inner {                /* Celkovy header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto
+}
+.nav_link {                   /* Zajimavy efekt animation on button*/
+    text-decoration:none;
+    color: #FFFFFF;
+    transition:color .2s linear;
+    margin: 0 12px;
+}
+.nav_link:hover {
+    color: #ECC050;
+
+}
+/*container pro 1 stranku*/
+.container {
+    width:100%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+
+/* Background a maincontent 1 stranky*/
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("./pics/Background.png"), center no-repeat;
+    background-size: cover;
+    opacity: 1;
+    
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    margin:0 auto;
+    text-align: center;
+}
+.intro_suptitle {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 85px;
+
+}
+.intro_title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 131px;
+    color: #ECC050;
+}
+/* button learn more */            /* Zajimavy efekt animation on button*/
+.btn {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #fff;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear, color .2s linear;
+
+}
+.btn:hover {
+    color: #42352E;
+    background-color:#FFFFFF;
+}
+
+/*about us stranka*/
+.about_us {                              /*background  about us*/
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("./pics/Background_about_us.png"), center no-repeat;
+    background-size: cover;
+    opacity: 1;
+    
+}
+.about_us_header {                       /*header about us*/
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+.hr1 {                                  /* lines*/
+    
+    width: 180px;
+    height: 2px;
+    margin-right: 1200px;
+    background-color: #FFDC81;
+
+}
+
+.container_about_us {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about_us_page {                       /* maincontent about us*/
+
+    padding-top: 100px;
+    font-size: 30px;
+    position: absolute;
+    line-height: 40px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    
+}
+.sign_up_button {                    /* Zajimavy efekt animation on button*/
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #FFDC81;
+    padding: 8px 30px;
+    color: #FFDC81;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear, color .2s linear;
+
+
+}
+.sign_up_button:hover {
+    color: #42352E;
+    background-color:#FFFFFF;
+}
+.button {
+    padding-top:10px;
+}
+.footer_about_us {                 /* posledni blok about us, jako footer, ale neni*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+/* reviews */
+
+.reviews_page {                    /*reviews  about us*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("./pics/Background_reviews_new.jpg"), center no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+
+
+
+}
+
+.reviews_header {                 /*header reviews*/
+    width: 100%;
+    position: absolute;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+.hr2 {
+    width: 300px;
+    height: 2px;
+    background-color:#FFDC81;
+    
+
+}
+.reviews {                        /* maincontent reviews*/
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    line-height: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    text-align: center;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+}
+.container_reviews {
+    position: absolute;
+    top:110px;
+    left:0;
+    right:0;
+    z-index:1000;
+    
+}
+.hr3 {
+    background-color:#FFDC81;
+    height: 1px;
+}
+.login {                           /* login uzivatele*/
+    font-size: 25px;
+    text-align: center;
+}
+
+.textarea1 {                       /*pole pro pridani review*/
+    border-radius: 20px;
+    
+    background:rgba(0, 0, 0, 0.5) !important;
+
+    width: 1200px;
+    height: 150px;
+    resize: none;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    color: #BDBDBD;
+    padding:10px 10px;
+    margin-top:20px; 
+
+}
+
+/*.warning_textarea {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#a71616;
+
+}*/
+
+.sign_up_line {                     /*nadpis+odkaz na sign up page*/
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    text-align:center;
+    font-size: 20px;
+}
+
+.sign_up {
+    
+    color: #FFDC81;
+}
+
+/* contacts */
+
+.contacts {                         /*background contacts*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("./pics/Background_contacts_new.jpg"), center no-repeat;
+    background-size: cover;
+    opacity: 1;
+
+}
+
+.contacts_header {                 /*header contacts*/
+    width: 100%;
+    position: absolute;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:1000;
+}
+
+.hr3 {
+    width: 300px;
+    height: 2px;
+    background-color:#FFDC81; 
+}
+.container_contacts {
+    position: absolute;
+    top: 100px;
+    left:0;
+    right:0;
+    z-index: 1000;
+}
+.contacts_blocks {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+    
+}
+.contacts_name_of_contact {
+    font-size: 21px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+}
+                                    /* takova struktura bloku, jako v matice, aby bylo pohodlnejsi*/
+.line1_1 {
+    position: relative;
+    margin:0 auto;
+    float: left;
+    font-size:20px;
+    width: 560px;
+    height: 165px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.line1_2 {
+    padding-top: 1px;
+    font-size:20px;
+    width: 560px;
+    height: 165px;
+    margin-left: 640px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.line2_1 {
+    float: left;
+    font-size:20px;
+    width: 560px;
+    height: 165px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+}
+.line2_2 {
+    font-size:20px;
+    width: 560px;
+    height: 165px;
+    margin-left: 640px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#sign_up_contacts {                 /*nadpis+odkaz na sign up page*/
+    clear: both;
+    margin-top: 300px;
+    position: absolute;
+    top: 300px;
+    left:0;
+    right:0;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #412718;
+    font-family: Rubik;
+    font-style: normal;
+    color:#7E4728;
+    text-align:center;
+    margin-top:auto;
+    
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* sign up and sign in page */
+
+.maincontent {                      /* background sign up page*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("./pics/Background_sign_up_in_new.jpg"), center no-repeat;
+    background-size: cover;
+    opacity: 1;
+
+}
+
+
+.blocks {                         /* bloky pro sign up a sign in*/
+    position: absolute;  
+    top: 10%;
+    left: 0;
+    right: 0;
+    z-index:1000;
+}
+.container_reg {
+    position: absolute;
+    max-width: 1200px;
+    margin:auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:1000;
+}
+
+.leftside {                       /* sign up*/
+    
+    float:left;
+    width: 530px;
+    
+    position: absolute;
+    z-index:1000;
+    
+    
+    
+
+}
+.rightside {                    /*sign in*/
+    
+    width: 530px;
+    
+    position: absolute;
+    margin-left: 680px;
+    z-index:1000;
+
+    
+    
+    
+}
+
+.up_or_in {
+    font-size:28px;
+    text-align: center;
+}
+
+.input_sign_up_in {
+    border-radius: 20px;
+    
+    background:rgba(0, 0, 0, 0.5) !important;
+
+    width: 500px;
+    height: 18px;
+    resize: none;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    color: #BDBDBD;
+    padding:10px 10px;
+}
+
+.registration_button {             /* Zajimavy efekt animation on button*/
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #FFDC81;
+    padding: 8px 30px;
+    color: #FFDC81;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear, color .2s linear;
+    background-color: #412718;
+
+}
+.registration_button:hover {
+    color: #42352E;
+    background-color:#FFFFFF;
+}
+    
+.sign_up_button322 {
+    margin-top: 30px;
+}
+
+.sign_in_button {               /* Zajimavy efekt animation on button*/
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #FFDC81;
+    padding: 8px 30px;
+    color: #BAEA34;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear, color .2s linear;
+    background-color: #412718;
+}
+.sign_in_button:hover {
+    color: #42352E;
+    background-color:#FFFFFF;
+}
+.sign_in_button322 {
+    margin-top: 30px;
+}
+.block-err{                  /* styl pro nejake chyby pri registrace atd.*/
+    position: absolute;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    top: 40%;
+    left: 25%;
+    color: darkred;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 1%;
+    line-height: 0.8em;
+    font-size: 0.5em;
+    
+}
+.block-warn{             /* styl pro ruzne udalosti pri registrace atd.*/
+    
+    top: 20em;
+    left: 38em;
+    font-size: 0.5em;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 1%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.block-msg{            /* pri spravnem odeslani form*/
+    color: green;
+}
+
+
+
+@media print {
+/* page #1 */
+    * {
+        font: 11pt/14pt Arial, sans-serif;
+    }
+    body {
+        font: 11pt/14pt Arial, sans-serif;
+        background: #f0f3ea;
+        color: black;
+    }
+    .nav_link {
+        color: black;
+        transition: none !important;
+
+    }
+    .intro {
+        background: none !important;
+    }
+    .intro_title {
+        color: black;
+    }
+    .intro_suptitle {
+        color: black !important;
+    }
+    .btn {
+        color: black !important;
+        background-color: gray;
+    }
+/* page #2 */
+    .about_us {
+        background: #f0f3ea !important;
+    }
+    .hr1 {
+        width: 50px;
+        background-color: black;
+    }
+    .sign_up_button {
+        color: black;
+        border-color: gray;
+        background-color: gray;
+    }
+/* page #3 */
+    .reviews_page {
+        background: #f0f3ea !important;
+    }
+    .hr2 {
+        background-color: black;
+    }
+    .hr3 {
+        background-color: black;
+    }
+    .textarea1 {
+        display: none !important;
+    }
+    .sign_up_line {
+        display: none !important;
+    }
+/* page #4 */
+    .contacts {
+        background:#f0f3ea !important ;
+        
+    }
+    #sign_up_contacts {
+        display: none !important;
+    }
+    .footer {
+        color: black;
+        background-color: #f0f3ea ;
+    }
+/* sign up and sign in page */
+    .maincontent {
+        background: #f0f3ea !important;
+    }
+    .input_sign_up_in {
+        border-radius: 0;
+        background:none !important;
+        color: black !important;
+    }
+    .sign_in_button {
+        color: black;
+        background-color: gray;
+        border:gray;
+    }
+    .registration_button {
+        color: black;
+        background-color: gray;
+        border:gray;
+    }
+
+
+
+
+} 
